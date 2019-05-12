@@ -1,0 +1,38 @@
+.main{
+    text-align: center;
+}
+.comments{
+    border: 1px solid black;
+    word-break: break-all;
+    margin-top: 30px;
+}
+#Form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.commentText{
+    margin-top: 50px;
+    text-align: center;
+}
+.wrapper{
+    margin: auto;
+    width: 50%;
+    max-width: 1000px;
+}
+.textAreaDiv{
+    margin-top: 50px;
+}
+.textAreaDiv h2{
+    text-align: center;
+}
+.blogImage{
+    width: 75%;
+}
+.textArea{
+    width: 100%;
+}
+textarea:focus{
+    border:1px solid #ff0df1;
+    box-shadow: 0 0 10px #719ECE;
+}
