@@ -5,18 +5,8 @@ use App\Blogs;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
 
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+//    Index page
     public function index()
     {
         $blogs = Blogs::latest()->paginate(4);
@@ -26,11 +16,10 @@ class HomeController extends Controller
 
         return view('home', ['blogs' => $blogs]);
     }
-
+//   D
     public function showPost($id){
 //        Get the id and showing all the info from the clothing with that id
         $blog = Blogs::find($id);
-//        dd($kleding->images);
         return view('blogs.blog', ['blog' => $blog]);
     }
 

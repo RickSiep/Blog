@@ -14,12 +14,13 @@ body{
     color: #80807f;
 }
 
-/* Grid */
+/* Flex wrapper */
 .bigWrapper{
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
+/* Wrapper */
 .wrapper{
     margin: 0 auto;
     display: grid;
@@ -28,6 +29,7 @@ body{
     width: 100%;
     grid-row-gap: 30px;
 }
+/* flex items* */
 .gridItems{
     border: 3px solid black;
     display: flex;
@@ -42,6 +44,7 @@ body{
     color: #ffed4f;
 }
 
+/*  */
 .text{
     display: flex;
     flex-direction: column;
@@ -49,14 +52,17 @@ body{
     margin: auto;
     background-color: grey;
 }
+/* Image height */
 .blogItem{
     min-width: 200px;
     max-width: 400px;
 }
+/* Blog image */
 .blogImage{
     width: 100%;
     height: 300px;
 }
+/* Clear float */
 .group:after {
     content: "";
     display: table;

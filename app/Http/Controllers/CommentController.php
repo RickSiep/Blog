@@ -11,11 +11,13 @@ use Illuminate\Support\Facades\Session;
 
 class CommentController extends Controller
 {
+//    Need to be logged in to comment
     public function __construct()
     {
         $this->middleware('auth');
     }
 
+//    Add a comment
     public function addComment(Request $request,$blog_id)
     {
         $user = Auth::user();
@@ -29,11 +31,13 @@ class CommentController extends Controller
         Session::flash('succes', 'comment is toegevoegd');
         return redirect()->route('showPost', $blog);
     }
+//    Delete a comment
     public function deleteComment($id){
         $comment = Comment::find($id);
         $comment->delete();
         return redirect()->route('showPost', $comment->blogs_id);
     }
+//    Store function
     public function store(Request $request, $blog_id){
         $user = Auth::user();
         $comment = new Comment();
@@ -46,11 +50,7 @@ class CommentController extends Controller
             return response()->json(['errors' => $error->errors()->all()]);
         }
 
-//        $form_data = array(
-//            'name' => $user->name,
-//            'email' => $user->email,
-//            'comment' => $request->comment,
-//        );
+
         $comment->name = $user->name;
         $comment->email = $user->email;
         $comment->comment = $request->comment;

@@ -1,25 +1,30 @@
 .main{
     text-align: center;
 }
+/* Comments form */
 .comments{
     border: 1px solid black;
     word-break: break-all;
     margin-top: 30px;
 }
+/* Form */
 #Form{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* Comment text */
 .commentText{
     margin-top: 50px;
     text-align: center;
 }
+/* Wrapper to center */
 .wrapper{
     margin: auto;
     width: 50%;
     max-width: 1000px;
 }
+/* Comment div */
 .textAreaDiv{
     margin-top: 50px;
 }

@@ -11,6 +11,7 @@ class Blogs extends Model
 
     protected $fillable = ['title', 'blog'];
 
+//    Blog has many comments and might have multiple images
     public function comments(){
         return $this->hasMany('App\Comment');
     }

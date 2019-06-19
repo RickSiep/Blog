@@ -55,38 +55,4 @@
             </div>
             @endforeach
     </div>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#commentForm').on('submit', function (event) {
-                event.preventDefault();
-                if ($('#action').val() == 'submit') {
-                    $.ajax({
-                        url: "{{ route('store',$blog) }}",
-                        method: "POST",
-                        data: new FormData(this),
-                        contentType: false,
-                        cache: false,
-                        processData: false,
-                        dataType: "json",
-                        succes: function (data) {
-                            var html = '';
-                            if (data.errors) {
-                                html = '<div class="alert alert-danger">';
-                                for (var count = 0; count < data.errors.length; count++) {
-                                    html += '<p>' + data.errors[count] + '</p>';
-                                }
-                                html += '</div>';
-                            }
-                            if (data.succes) {
-                                html = '<div class="alert alert-succes">' + data.succes + '</div>';
-                                $('#commentForm')[0].reset();
-                                $('#comments').DataTable().ajax.reload();
-                            }
-                            $('#form_result').html(html);
-                        }
-                    });
-                }
-            });
-        });
-    </script>
 @endsection

@@ -9,7 +9,8 @@ class Comment extends Model
     protected $table = 'comments';
 
     protected $fillable = ['name','email','comment'];
-//    Make a hasmany function
+
+//    Belongs to blog
     public function blog()
     {
         return $this->belongsTo('App\Blogs');
