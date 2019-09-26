@@ -37,6 +37,22 @@
             @endif
         </div>
 
+        <div class="form-group">
+            <label for="period">Period</label>
+            <select name="period">
+                @if($blog->period == 1)
+                    <option value="1" selected="selected">1</option>
+                    <option value="2">2</option>
+                    @else
+                        <option value="1">1</option>
+                        <option value="2" selected="selected">2</option>
+                        @endif
+            </select>
+            @if($errors->has('period'))
+                <strong>{{$errors->first('period')}}</strong>
+            @endif
+        </div>
+
 
         @foreach($blog->images as $image)
             <div class="images">

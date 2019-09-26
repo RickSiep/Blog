@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Blogs;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -12,6 +13,15 @@ class HomeController extends Controller
         $blogs = Blogs::latest()->paginate(6);
         // code
 
+        return view('home', ['blogs' => $blogs]);
+    }
+
+    public function showPeriod(Request $request){
+        if ($request->period == 'All'){
+            $blogs = Blogs::latest()->paginate(6);
+        } else {
+            $blogs = Blogs::where('period', '=', $request->period)->paginate(6);
+        }
         return view('home', ['blogs' => $blogs]);
     }
 //   D

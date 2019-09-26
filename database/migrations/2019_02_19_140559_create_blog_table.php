@@ -17,6 +17,7 @@ class CreateBlogTable extends Migration
             $table->increments('id');
             $table->string('title', 200);
             $table->string('blog', 5000);
+            $table->integer('period')->unsigned();
             $table->timestamps();
         });
     }

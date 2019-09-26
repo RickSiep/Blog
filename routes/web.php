@@ -22,11 +22,7 @@ Route::get('/deleteComment{id}','CommentController@deleteComment')->name('delete
 Route::get('/delete{id}', 'BlogController@deleteBlog')->name('deleteBlog');
 
 // Test
-Route::get('/submit', function(){
-    if(Request::ajax()){
-        return 'submit is gebeurd';
-    }
-});
+
 Route::post('/store', 'CommentController@store')->name('store');
 //
 
@@ -34,6 +30,9 @@ Route::post('/store', 'CommentController@store')->name('store');
 // Delete comment
 
 Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('period', 'HomeController@showPeriod')->name('showPeriod');
+
 Route::get('/blog{id}', 'HomeController@showPost')
     ->name('showPost')
 ;

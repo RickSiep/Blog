@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\File;
 
 use Illuminate\Http\Request;
 use App\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class BlogController extends Controller
 {
@@ -35,7 +36,8 @@ class BlogController extends Controller
         $user = User::all()->where('subscribed', '==', '1');
         $blogs->fill([
             'title' => $request['title'],
-            'blog' => $request['blog']
+            'blog' => $request['blog'],
+            'period' => $request['period']
         ]);
 
         $blogs->save();
@@ -68,10 +70,11 @@ class BlogController extends Controller
         $blog = Blogs::find($id);
         $blog->fill([
            'title' => $request['title'],
-           'blog' => $request['blog']
+           'blog' => $request['blog'],
+            'period' => $request['period']
         ]);
         $blog->save();
-        return view('home');
+        return redirect()->route('home');
     }
 // Delete blog and images
     public function deleteBlog($id){
@@ -88,6 +91,5 @@ class BlogController extends Controller
         $blogs->delete();
         return redirect()->route('allBlogs');
     }
-
 
 }

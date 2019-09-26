@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('script')
+
+    @endsection
+
 @section('style')
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
     @endsection
@@ -36,6 +40,34 @@
 
     </div>
 
+
+    <form action="{{route('showPeriod')}}" method="get">
+        <div class="d-flex justify-content-center">
+        <h2>Selecteer de periode van de blogs</h2>
+            <select name="period" onchange="this.form.submit()">
+                @if (app('request')->input('period') == '1')
+                    <option value="All">All</option>
+
+                    <option value="1" selected="selected">1</option>
+
+                    <option value="2">2</option>
+               @elseif(app('request')->input('period') == '2')
+                    <option value="All">All</option>
+
+                    <option value="1">1</option>
+
+                    <option value="2" selected="selected">2</option>
+                    @else
+                    <option value="All" selected="selected">All</option>
+
+                    <option value="1">1</option>
+
+                    <option value="2">2</option>
+                    @endif
+            </select>
+        </div>
+
+    </form>
 
     <div class="blog-items-wrapper">
         <div class="blog-inner-wrapper" id="blogs">

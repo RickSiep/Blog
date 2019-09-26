@@ -9,7 +9,7 @@ class Blogs extends Model
 
     protected $table = 'blog';
 
-    protected $fillable = ['title', 'blog'];
+    protected $fillable = ['title', 'blog', 'period'];
 
 //    Blog has many comments and might have multiple images
     public function comments(){
