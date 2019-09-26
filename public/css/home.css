@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: myFirstFont;
     src: url(Walkway.ttf);
@@ -13,44 +16,82 @@ body{
     font-size: 45px;
     color: #80807f;
 }
+/* Slide section*/
+.slide-wrapper{
+    background: url('../images/sitenu.jpg') no-repeat center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+/* Slide content */
+.slide-content{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+/* Slide h3 */
+.slide-content h3{
+    font-size: 50px;
+    color: #fff;
+}
+
+/* About me section */
+.about-me-wrapper{
+    display: flex;
+    padding: 100px 50px;
+}
+.about-left-column{
+    width: 50%;
+}
+.about-right-column{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.my-image{
+    width: 45%;
+}
 
 /* Flex wrapper */
-.bigWrapper{
+.blog-items-wrapper{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 /* Wrapper */
-.wrapper{
-    margin: 0 auto;
+.blog-inner-wrapper{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 55%;
-    width: 100%;
+    grid-template-columns: 1fr 1fr auto;
     grid-row-gap: 30px;
+    grid-column-gap: 0;
 }
 /* flex items* */
-.gridItems{
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    /*box-sizing:*/
-}
-.gridItems2 a{
-    color: #ffed4f;
-    word-break: break-all;
-}
 .text a{
-    color: #ffed4f;
+    color: #fff;
 }
 
+.portfolio-button{
+    border-radius: 7.5px;
+    padding: 15px;
+    background-color: #00bff3;
+    color: white;
+    transition: 1s all;
+}
+.portfolio-button:hover{
+    transform: scaleY(0.6);
+    background-color: #f30000;
+    color: white;
+}
 /*  */
 .text{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
-    background-color: grey;
+    background-color: black;
 }
 /* Image height */
 .blogItem{
@@ -69,36 +110,51 @@ body{
     clear: both;
 }
 
-.gridItems p{
-    color: blue;
-}
-.gridItems h2{
-    font-size: 3em;
-}
-#wrapperLink p{
-    font-size: 20px;
-}
 .links{
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width: 1035px) {
-    .wrapper{
-        grid-template-columns: auto auto;
-        grid-column-gap: 25%;
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .blog-inner-wrapper{
+        grid-template-columns: 1fr 1fr;
     }
     .blogItem{
         max-width: 338px;
     }
+    .about-right-column{
+        display: block;
+    }
+    .my-image{
+        width: 100%;
+        padding: 20px;
+    }
+    .about-left-column{
+        display:block;
+    }
     
 }
-@media screen and (max-width: 635px){
-    .wrapper{
-        grid-template-columns: auto;
-        grid-column-gap: 0%;
+@media screen and (max-width: 576px){
+    .blog-inner-wrapper{
+        grid-template-columns: 1fr;
     }
     .blogItem{
         min-width: 200px;
         max-width: 1000px;
+    }
+    .about-me-wrapper{
+        display: block;
+        padding: 50px 25px;
+    }
+    .about-right-column{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about-left-column{
+        text-align: center;
+        width:100%;
+    }
+    .about-left-column h3{
+        font-size: 1.25rem;
     }
 }

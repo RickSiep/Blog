@@ -17,6 +17,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Styles -->
@@ -60,7 +61,32 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('author')}}">{{ __('Over mij') }}</a>
                         </li>
+                            {{--<li class="nav-item dropdown">--}}
+                                {{--<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>--}}
+                                    {{--Yes hello<span class="caret">yes</span>--}}
+                                {{--</a>--}}
+                                {{--<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">--}}
+                                    {{--<a class="dropdown-item" href="{{ route('logout') }}"--}}
+                                       {{--onclick="event.preventDefault();--}}
+                                                     {{--document.getElementById('logout-form').submit();">--}}
+                                        {{--<p>Yo</p>--}}
+                                    {{--</a>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
                         @else
+                                {{--<li class="nav-item dropdown">--}}
+                                    {{--<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>--}}
+                                        {{--<span class="caret">Laatste 4 blogs</span>--}}
+                                    {{--</a>--}}
+                                    {{--<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">--}}
+                                        {{--@foreach($blogs as $blog)--}}
+                                        {{--<a class="dropdown-item" href="{{route('showPost',$blog->id)}}">--}}
+                                            {{--<p>{{$blog->title}}</p>--}}
+                                        {{--</a>--}}
+                                            {{--@endforeach--}}
+                                    {{--</div>--}}
+                                {{--</li>--}}
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -121,7 +147,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
         @section('script')

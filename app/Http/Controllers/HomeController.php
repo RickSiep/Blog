@@ -9,10 +9,8 @@ class HomeController extends Controller
 //    Index page
     public function index()
     {
-        $blogs = Blogs::latest()->paginate(4);
+        $blogs = Blogs::latest()->paginate(6);
         // code
-
-
 
         return view('home', ['blogs' => $blogs]);
     }
