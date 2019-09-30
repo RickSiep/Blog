@@ -17,19 +17,40 @@ body{
     color: #80807f;
 }
 /* Slide section*/
-.slide-wrapper{
-    background: url('../images/sitenu.jpg') no-repeat center;
+.slide-wrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items:center;
+    position: relative;
+}
+
+/* Different backgrounds for different blogs */
+.sitenu-background {
+    background: url('../images/sitenu.jpg') no-repeat center;
+}
+/* Justbetter background */
+.justbetter-background {
+    background: url('../images/justbetter.jpg') no-repeat center;
+}
+/* Mediacollege background */
+.mediacollege-background {
+    background: url('../images/media.jpg') no-repeat center;
+}
+
+.slide-black-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
 /* Slide content */
 .slide-content{
     text-align: center;
     font-size: 30px;
     color: white;
+    z-index: 1;
 }
 /* Slide h3 */
 .slide-content h3{
@@ -132,7 +153,7 @@ body{
     .about-left-column{
         display:block;
     }
-    
+
 }
 @media screen and (max-width: 576px){
     .blog-inner-wrapper{

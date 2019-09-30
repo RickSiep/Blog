@@ -1,20 +1,47 @@
 @extends('layouts.app')
 
-@section('script')
-
-    @endsection
-
 @section('style')
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
     @endsection
 
 @section('content')
-    <div class="slide-wrapper">
-        <div class="slide-content">
-            <h3>Site.nu blogs</h3>
-            <a href="#blogs"><i class="fas fa-arrow-down"></i></a>
-        </div>
-    </div>
+                @if (app('request')->input('period') == '1')
+
+                <div class="slide-wrapper sitenu-background">
+                    <div class="slide-black-overlay">
+                    </div>
+                        <div class="slide-content">
+                            <h3>Site.nu blogs</h3>
+                            <a href="#blogs"><i class="fas fa-arrow-down"></i></a>
+                        </div>
+                </div>
+
+                @elseif(app('request')->input('period') == '2')
+
+                    <div class="slide-wrapper justbetter-background">
+                        <div class="slide-black-overlay">
+                        </div>
+                        <div class="slide-content">
+                            <h3>JustBetter blogs</h3>
+                            <a href="#blogs"><i class="fas fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+
+                @else
+
+                    <div class="slide-wrapper mediacollege-background">
+                        <div class="slide-black-overlay">
+                        </div>
+                        <div class="slide-content">
+                            <h3>Alle blogs</h3>
+                            <a href="#blogs"><i class="fas fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+
+                @endif
+
+
+
 
     <div class="about-me-wrapper" id="about-me">
 
@@ -28,9 +55,9 @@
             <br>
             <h2>Over de schrijfer</h2>
             <br>
-            <h3>Mijn naam is Rick Siepelinga, ik ben nu een tweedejaars developer op het Mediacollege Amsterdam.
+            <h3>Mijn naam is Rick Siepelinga, ik ben nu een derdejaars developer op het Mediacollege Amsterdam.
                 Persoonlijk hou ik veel van backend developen, deze hele blog site is ook gemaakt via Laravel, een backend framework waar ik erg van hou.
-                Ik loop nu stage bij WeConnect Students, een leuk bedrijf waar veel met laravel heb mogen werken, en op het moment werk ik veel met WordPress.</h3>
+                Ik loop nu stage bij JustBetter, een bedrijf gevestigd in Alkmaar dat veel met Magento, Laravel en WordPress werkt.</h3>
             <br>
             <h3>Als je meer over mij zou willen leren kun je altijd naar mijn <a href="http://24585.hosts1.ma-cloud.nl/bewijzenmap/periode2.1/onepage/" target="_blank">Portfolio</a>
                 gaan.</h3>
@@ -42,7 +69,7 @@
 
 
     <form action="{{route('showPeriod')}}" method="get">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-around">
         <h2>Selecteer de periode van de blogs</h2>
             <select name="period" onchange="this.form.submit()">
                 @if (app('request')->input('period') == '1')

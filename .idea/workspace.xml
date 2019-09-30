@@ -2,77 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84356b36-be86-46ad-b1ac-6c275692bd44" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Blogs.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Blogs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_19_140559_create_blog_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_19_140559_create_blog_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/allBlogs.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/allBlogs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/author.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/author.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/blog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/3SuIYxX8dVVR.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/5Kv9IdnIvik0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/5gxU2pqVBYsX.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/9E7k0v3ZAMzk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/CbgbyMSFIu4d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/GmKzwRpo5YBT.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/INC2XS7fRYMy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/IfXc6nO3qoL9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/LFOsfFuMB9e7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/NKEwvOqftgKd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/NVQZ7DrlVd8r.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/O8PQZ4DT5GpR.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/PHXwLDgosAxT.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/QY9M5JMeGHAC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/ShbXVQ8wVqlZ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/Tpt1LaDXHuYb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/XKYkVwmLMMyv.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/YOBQDOmzurlF.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/ZO0mWLzOGmg6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/ZRlzO1fQ0Cgh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/a9pKyyIPcyjG.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/bC5AL26SvLsu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/cQ1N2E8fJqdT.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/cjhUtvcjzF0f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/dNN7wDQHMuyr.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/dneA54EUmelU.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/dtalm0Y8twig.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/eY0Fx5snfvO5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/h7hvbHNELX0r.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/hMxyolUFL05Q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/jZJuASLaWR6j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/kkUso50ykvE8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/kklFYtAZvDY1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/lBr65DsACfeE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/lIfbTUYKc2Kg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/mZT4ld5O9vqP.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/pdcyL5DrEsss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/qGYm21YIDPIq.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/qJ16Fl7fyC5L.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/rEnHmceETkqk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/sTJ7a4NRaftr.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/shapWldu9IiZ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/uQofvILVFYfn.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/upI6n1kfsfP4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/vgbHIJbWYni0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/x7eMe565AKu7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/yGEr9oR306Qu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/ymDvj9qfigwj.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/photos/zVZ6Wm2ENdRR.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blogs/addBlog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blogs/addBlog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blogs/cv.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blogs/test.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,14 +136,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rick-\Documents\ma\bewijzenmap\periode2.1\PMW\Blog\public\js" />
-      <recent name="C:\Users\rick-\Documents\ma\bewijzenmap\periode2.1\PMW\Blog\resources\views" />
-      <recent name="C:\Users\rick-\Documents\ma\bewijzenmap\periode2.1\PMW\Blog\resources\views\blogs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rick-\Documents\ma\bewijzenmap\Blog\public\images" />
       <recent name="C:\Users\rick-\Documents\ma\bewijzenmap\periode2.1\PMW\Blog\public\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="C:\Users\rick-\Documents\ma\bewijzenmap\periode2.1\PMW\Blog\public\js" />
+      <recent name="C:\Users\rick-\Documents\ma\bewijzenmap\periode2.1\PMW\Blog\resources\views" />
+      <recent name="C:\Users\rick-\Documents\ma\bewijzenmap\periode2.1\PMW\Blog\resources\views\blogs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -347,7 +280,8 @@
       <workItem from="1568362177736" duration="178000" />
       <workItem from="1569486002871" duration="677000" />
       <workItem from="1569486862274" duration="4884000" />
-      <workItem from="1569494317067" duration="6747000" />
+      <workItem from="1569494317067" duration="7930000" />
+      <workItem from="1569826073207" duration="4619000" />
     </task>
     <servers />
   </component>
