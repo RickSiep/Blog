@@ -50,6 +50,7 @@ Route::post('/subscribe', 'SubscribeController@subscribe')
 Route::post('/unsubscribe', 'SubscribeController@unSubscribe')
     ->name('unsubscribe');
 
+Route::get('/pap', 'HomeController@pap')->name('pap');
 // Author route
 Route::get('/author', 'HomeController@author')
     ->name('author');
