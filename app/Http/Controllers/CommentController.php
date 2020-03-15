@@ -16,6 +16,13 @@ class CommentController extends Controller
     {
         $this->middleware('auth');
     }
+    public function showUsers()
+    {
+        $users = User::paginate(10);
+        $loggedInUser = Auth::user();
+        return view('show', ['users' => $users]);
+    }
+
 
 //    Add a comment
     public function addComment(Request $request,$blog_id)

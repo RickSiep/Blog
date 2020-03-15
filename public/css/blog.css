@@ -1,11 +1,21 @@
-.main{
-    text-align: center;
+p {
+    font-size: 16px;
 }
+
+h2 {
+    font-size: 2rem !important;
+    padding: 15px;
+    text-decoration: underline;
+}
+
 /* Comments form */
 .comments{
     border: 1px solid black;
     word-break: break-all;
     margin-top: 30px;
+}
+.createdAt {
+    color: blue;
 }
 /* Form */
 #Form{
@@ -33,6 +43,7 @@
 }
 .blogImage{
     width: 20%;
+    padding: 20px;
 }
 .textArea{
     width: 100%;
@@ -40,4 +51,18 @@
 textarea:focus{
     border:1px solid #ff0df1;
     box-shadow: 0 0 10px #719ECE;
+}
+
+.nextPrevButtons {
+    padding: 15px;
+    background-color: #00bff3;
+    color: white;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+.nextPrevButtons:hover {
+    text-decoration: none;
+    background-color: #006E99;
+    color: white;
 }

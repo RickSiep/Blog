@@ -11,15 +11,25 @@
 @section('content')
     <div class="wrapper">
     <div class="main">
-        <h1>{{$blog->title}}</h1>
-        <h2>{{$blog->created_at}}</h2>
         @foreach($blog->images as $image)
             <img src="{{asset('/photos/'.$image->filename)}}" alt="{{$image->filename}}" class="blogImage">
         @endforeach
+        <h1>{{$blog->title}}</h1>
+        <p class="createdAt">Gepost op: {{ $blog->created_at->format('d M Y') }}</p>
         <div class="text">
             {!! $blog->blog !!}
         </div>
     </div>
+
+        <div class="d-flex flex-row justify-content-between py-5">
+            @if($previous !== null)
+                <a href="{{route('showPost',$previous)}}" class="nextPrevButtons">Previous blog</a>
+            @endif
+
+            @if($next !== null)
+                <a href="{{route('showPost',$next)}}" class="nextPrevButtons">Next blog</a>
+            @endif
+        </div>
 
 
     {{-- Form with route to add comment --}}
